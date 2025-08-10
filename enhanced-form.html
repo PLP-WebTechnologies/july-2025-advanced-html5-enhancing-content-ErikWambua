@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poultry Farming in Kenya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 30px;
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        form {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        fieldset {
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+        }
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .media-container {
+            margin: 20px 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .media-box {
+            flex: 1;
+            min-width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Poultry Farming in Kenya</h1>
+    </header>
+
+    <section id="content">
+        <h2>Poultry Farming Overview</h2>
+        
+        <h3>Common Poultry Breeds</h3>
+        <ul>
+            <li>Indigenous/Kienyeji chickens</li>
+            <li>Broilers (for meat)</li>
+            <li>Layers (for eggs)</li>
+            <li>Dual-purpose breeds</li>
+        </ul>
+        
+        <h3>Annual Production</h3>
+        <table>
+            <tr>
+                <th>Year</th>
+                <th>Eggs (millions)</th>
+                <th>Meat (tons)</th>
+            </tr>
+            <tr>
+                <td>2021</td>
+                <td>1,510</td>
+                <td>61,200</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td>1,650</td>
+                <td>65,000</td>
+            </tr>
+        </table>
+        
+        <h3>Poultry Farming Media</h3>
+        <div class="media-container">
+            <div class="media-box">
+                <figure>
+                    <img src="pexels-nc-farm-bureau-mark-27083552.jpg" alt="Poultry farm" width="100%">
+                    <figcaption>Typical poultry farm in Kenya</figcaption>
+                </figure>
+            </div>
+            <div class="media-box">
+                <h4>Audio: Poultry Farming Tips</h4>
+                <audio controls>
+                    <source src="___Golden_Light__by_Nora_Johnsson_Relaxing_Piano.mpeg" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                </audio>
+                <p>Listen to relaxing classic music</p>
+            </div>
+        </div>
+        
+        <div class="media-container">
+            <div class="media-box">
+                <h4>Video: Modern Poultry Farming</h4>
+                <video width="100%" controls poster="https://via.placeholder.com/600x340?text=Video+Thumbnail">
+                    <source src="4911809-uhd_4096_2160_25fps.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Watch modern poultry farmer taking care of birds</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="survey">
+        <h2>Poultry Farmer Survey</h2>
+        
+        <form id="farmerForm">
+            <fieldset>
+                <legend>Personal Information</legend>
+                
+                <label for="name">Full Name*</label>
+                <input type="text" id="name" name="name" required minlength="3" placeholder="Your full name">
+                
+                <label for="email">Email*</label>
+                <input type="email" id="email" name="email" required placeholder="your@email.com">
+                
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0712345678">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Farm Details</legend>
+                
+                <label for="county">County*</label>
+                <select id="county" name="county" required>
+                    <option value="">Select county</option>
+                    <option value="nairobi">Nairobi</option>
+                    <option value="kiambu">Kiambu</option>
+                    <option value="nakuru">Nakuru</option>
+                </select>
+                
+                <label>Farm Type*</label>
+                <input type="radio" id="small" name="farmType" value="small" required>
+                <label for="small" style="display: inline;">Small-scale</label><br>
+                
+                <input type="radio" id="medium" name="farmType" value="medium">
+                <label for="medium" style="display: inline;">Medium-scale</label><br>
+                
+                <input type="radio" id="large" name="farmType" value="large">
+                <label for="large" style="display: inline;">Large-scale</label>
+                
+                <label for="birds">Number of Birds</label>
+                <input type="number" id="birds" name="birds" min="1" max="10000">
+            </fieldset>
+            
+            <fieldset>
+                <legend>Additional Information</legend>
+                
+                <label for="challenges">Main Challenges</label>
+                <textarea id="challenges" name="challenges" rows="4" placeholder="Describe your challenges..."></textarea>
+                
+                <label for="training">Training Needed</label>
+                <select id="training" name="training" multiple>
+                    <option value="health">Poultry Health</option>
+                    <option value="feeding">Feeding</option>
+                    <option value="housing">Housing</option>
+                </select>
+            </fieldset>
+            
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree" style="display: inline;">I agree to the terms*</label><br><br>
+            
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Kenya Poultry Farmers Association</p>
+    </footer>
+</body>
+</html>
